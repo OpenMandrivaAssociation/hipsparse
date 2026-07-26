@@ -1,0 +1,22 @@
+diff -ruN hipsparse-pristine/hipsparse/library/src/amd_detail/hipsparse_auxiliary.cpp hipsparse-p/hipsparse/library/src/amd_detail/hipsparse_auxiliary.cpp
+--- a/library/src/amd_detail/hipsparse_auxiliary.cpp	2026-07-15 16:24:22.838333000 +0200
++++ b/library/src/amd_detail/hipsparse_auxiliary.cpp	2026-07-24 05:07:07.054333288 +0200
+@@ -22,6 +22,7 @@
+  *
+  * ************************************************************************ */
+ 
++#include <cstring>
+ #include "hipsparse.h"
+ 
+ #include <hip/hip_complex.h>
+diff -ruN hipsparse-pristine/hipsparse/library/src/nvidia_detail/hipsparse_auxiliary.cpp hipsparse-p/hipsparse/library/src/nvidia_detail/hipsparse_auxiliary.cpp
+--- a/library/src/nvidia_detail/hipsparse_auxiliary.cpp	2026-07-15 16:24:22.843333000 +0200
++++ b/library/src/nvidia_detail/hipsparse_auxiliary.cpp	2026-07-24 05:07:07.052590926 +0200
+@@ -20,6 +20,7 @@
+ * THE SOFTWARE.
+ *
+ * ************************************************************************ */
++#include <cstring>
+ #include "hipsparse.h"
+ 
+ #include <cuda_runtime_api.h>
