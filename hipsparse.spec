@@ -2,7 +2,7 @@
 
 Name:		hipsparse
 Version:	7.14.0
-Release:	1
+Release:	2
 Summary:	HIP sparse linear algebra (rocSPARSE wrapper)
 License:	MIT
 Group:		System/Libraries
@@ -23,7 +23,6 @@ BuildRequires:	clang >= %{rocm_llvm_maj_ver}
 BuildRequires:	rocsparse-devel
 BuildRequires:	python3
 
-ExclusiveArch:	%{x86_64} %{aarch64}
 
 %description
 hipSPARSE is a thin HIP API wrapper over rocSPARSE. GPU targets include gfx803.
