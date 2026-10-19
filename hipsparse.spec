@@ -1,13 +1,13 @@
-# HIP sparse wrapper over rocSPARSE (TheRock 10.0)
+# HIP sparse wrapper over rocSPARSE (TheRock 10.1)
 
 Name:		hipsparse
-Version:	10.0.0
+Version:	10.1.0
 Release:	1
 Summary:	HIP sparse linear algebra (rocSPARSE wrapper)
 License:	MIT
 Group:		System/Libraries
 URL:		https://github.com/ROCm/rocm-libraries
-Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.0/hipsparse.tar.gz#/hipsparse-%{version}.tar.gz
+Source0:	https://github.com/ROCm/rocm-libraries/releases/download/therock-10.1/hipsparse.tar.gz#/hipsparse-%{version}.tar.gz
 # Clang 23 / freestanding headers: host memcpy not visible without <cstring>
 Patch0:		0001-include-cstring.patch
 
